@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      <%= title %>
+    </title>
+
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+
+  <body class="<%= theme %>">
+    <div class="container">
+      <h1>Article Details</h1>
+
+      <div class="theme-switch">
+        <a class="btn" href="/set-theme/light?redirect=/articles/<%= article.id %>">Light</a>
+        <a class="btn" href="/set-theme/dark?redirect=/articles/<%= article.id %>">Dark</a>
+      </div>
+
+      <p>ID: <%= article.id %>
+      </p>
+      <p>Title: <%= article.title %>
+      </p>
+      <p>Description: <%= article.description %>
+      </p>
+
+      <a href="/articles">Back to articles</a>
+    </div>
+  </body>
+
+</html>
