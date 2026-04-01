@@ -1,32 +1,27 @@
-# Homework 64 — Express, Passport та Sessions
+# Homework 65 — Express та MongoDB Atlas
 
 ## Опис
-У цьому проєкті оновлено Express сервер та додано авторизацію за допомогою Passport.
+У цьому проєкті Express сервер інтегровано з MongoDB Atlas за допомогою Mongoose.
 
 Реалізовано:
-- локальну авторизацію через email та password
-- збереження сесії через express-session
-- захищений маршрут `/protected`
-- маршрути для реєстрації, входу та виходу
+- підключення до MongoDB Atlas
+- модель для статей
+- отримання даних з бази
+- відображення даних на сторінці
 
 ## Технології
 - Node.js
 - Express.js
-- Passport
-- Passport Local
-- express-session
+- MongoDB Atlas
+- Mongoose
 
 ## Запуск
 ```bash
 npm install
 npm start
 ```
-##  Маршрути
-- POST /auth/register
-- POST /auth/login
-- GET /auth/logout
-- GET /protected
-##  Додатково
-- сесія зберігається у cookies
-- використовується httpOnly
-- застосовано MVC структуру
+## Маршрут
+GET /mongo-articles — отримання статей з MongoDB
+
+## Додатково
+- використовується MVC структура
